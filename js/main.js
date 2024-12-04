@@ -77,3 +77,11 @@ const processar = (numberFunction, functionCallback) => {
 const sumTwo = (num) => num + 2;
 
 console.log(processar(8, sumTwo));
+
+const calculadora = (firstNumber, secondNumber, calculateFunction) =>
+  calculateFunction(firstNumber, secondNumber);
+
+const addNumbers = (firstAddNumber, secondAddNumber) =>
+  firstAddNumber + secondAddNumber;
+
+console.log(calculadora(3, 4, addNumbers));
