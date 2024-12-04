@@ -38,3 +38,19 @@ const comparativeNumbers = (firstNumber, secondNumber) => {
     : console.log(`num2 és més gran`);
 };
 comparativeNumbers(num1, num2);
+
+const determineSymbol = (number) => {
+  return number > 0
+    ? `${number} és positiu`
+    : number === 0
+    ? `${number} és zero`
+    : `${number} és negatiu`;
+};
+console.log(determineSymbol(0));
+console.log(determineSymbol(5));
+console.log(determineSymbol(-2));
+
+const trobarMaxim = (a, b, c) => {
+  return a > b && a > c ? a : b > c ? b : c;
+};
+console.log(trobarMaxim(5, 6, 7));
