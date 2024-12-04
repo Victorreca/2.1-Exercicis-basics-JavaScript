@@ -95,3 +95,15 @@ const sayHi = (userName) => {
   console.log(`Hi ${userName}`);
 };
 esperarISaludar("Jose", sayHi);
+
+const processarElements = (arrayProcessarElements, functionElement) => {
+  arrayProcessarElements.forEach((elementArray) => {
+    functionElement(elementArray);
+  });
+};
+
+const showNumber = (number) => {
+  console.log(number);
+};
+const arrayNumbersElements = [1, 3, 4];
+processarElements(arrayNumbersElements, showNumber);
