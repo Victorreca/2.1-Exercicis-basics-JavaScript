@@ -85,3 +85,13 @@ const addNumbers = (firstAddNumber, secondAddNumber) =>
   firstAddNumber + secondAddNumber;
 
 console.log(calculadora(3, 4, addNumbers));
+
+const esperarISaludar = (name, functionWaiting) =>
+  setTimeout(() => {
+    functionWaiting(name);
+  }, 2000);
+
+const sayHi = (userName) => {
+  console.log(`Hi ${userName}`);
+};
+esperarISaludar("Jose", sayHi);
