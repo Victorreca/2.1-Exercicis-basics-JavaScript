@@ -28,3 +28,13 @@ const potConduir = (age) => {
 
 console.log(potConduir(17));
 console.log(potConduir(18));
+
+const num1 = 3;
+const num2 = 5;
+
+const comparativeNumbers = (firstNumber, secondNumber) => {
+  firstNumber > secondNumber
+    ? console.log(`num1 és més gran`)
+    : console.log(`num2 és més gran`);
+};
+comparativeNumbers(num1, num2);
