@@ -14,3 +14,10 @@ const printNumbers = (arrayNumbersValue) => {
   }
 };
 printNumbers(arrayNumbers);
+
+const setTimeOutFunction = () => {
+  setTimeout(() => {
+    console.log(`Has esperat 3 segons`);
+  }, 3000);
+};
+setTimeOutFunction();
