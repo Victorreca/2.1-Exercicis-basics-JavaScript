@@ -54,3 +54,18 @@ const trobarMaxim = (a, b, c) => {
   return a > b && a > c ? a : b > c ? b : c;
 };
 console.log(trobarMaxim(5, 6, 7));
+
+const parOImpar = (arrayNumbers) => {
+  let result = "";
+
+  arrayNumbers.forEach((numberParOImpar) => {
+    result =
+      numberParOImpar % 2 === 0
+        ? `${numberParOImpar} és parell.`
+        : `${numberParOImpar} és imparell.`;
+
+    console.log(result);
+  });
+};
+const arrayNumberParOImpar = [2, 3, 4, 10, 5];
+parOImpar(arrayNumberParOImpar);
