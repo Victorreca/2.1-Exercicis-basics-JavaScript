@@ -21,3 +21,10 @@ const setTimeOutFunction = () => {
   }, 3000);
 };
 setTimeOutFunction();
+
+const potConduir = (age) => {
+  return age >= 18 ? "Pots conduir" : "No pots conduir";
+};
+
+console.log(potConduir(17));
+console.log(potConduir(18));
