@@ -69,3 +69,11 @@ const parOImpar = (arrayNumbers) => {
 };
 const arrayNumberParOImpar = [2, 3, 4, 10, 5];
 parOImpar(arrayNumberParOImpar);
+
+const processar = (numberFunction, functionCallback) => {
+  return functionCallback(numberFunction);
+};
+
+const sumTwo = (num) => num + 2;
+
+console.log(processar(8, sumTwo));
