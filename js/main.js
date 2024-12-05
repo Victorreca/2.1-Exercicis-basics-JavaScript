@@ -208,8 +208,13 @@ const someNumberIsGreaterThanTen = (arrayNumbersSome) =>
 console.log(everyNumberIsGreaterThanTen(arrayNumbersEverySome));
 console.log(someNumberIsGreaterThanTen(arrayNumbersEverySome));
 
-const names = ["Anna", "Bernat", "Clara"];
+const namesForEach = ["Anna", "Bernat", "Clara"];
 
-names.forEach((name) => {
+namesForEach.forEach((name) => {
   console.log(name);
 });
+
+const namesForOf = ["Anna", "Bernat", "Clara"];
+for (const name of namesForOf) {
+  console.log(name);
+}
