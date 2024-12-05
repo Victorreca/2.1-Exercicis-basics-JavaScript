@@ -147,3 +147,13 @@ const [firstElement, secondElement, ...restElements] = arrayElements;
 console.log("firstElement: " + firstElement);
 console.log("secondElement: " + secondElement);
 console.log("restElements: " + restElements);
+
+const spreadInFunctions = (firstArgument, secondArgument, thirdArgument) => {
+  console.log(
+    `Los números son ${firstArgument}, ${secondArgument}, ${thirdArgument}`
+  );
+};
+
+const arrayThreeElements = [6, 9, 3];
+
+spreadInFunctions(...arrayThreeElements);
