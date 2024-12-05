@@ -178,3 +178,12 @@ const numbersToFind = [1, 10, 8, 11];
 const numbersGreaterTen = numbersToFind.find((number) => number > 10);
 
 console.log(`Primer número major que 10: ${numbersGreaterTen}`);
+
+const numbersToReduce = [13, 7, 8, 21];
+const initialValue = 0;
+const numbersTotalAdd = numbersToReduce.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(`Suma total ${numbersTotalAdd}`);
