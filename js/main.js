@@ -140,3 +140,10 @@ objecte2.name = "Juan";
 
 console.log(objecte1);
 console.log(objecte2);
+
+const arrayElements = [1, 3, 5, 7, 9];
+
+const [firstElement, secondElement, ...restElements] = arrayElements;
+console.log("firstElement: " + firstElement);
+console.log("secondElement: " + secondElement);
+console.log("restElements: " + restElements);
