@@ -173,3 +173,8 @@ console.log(`Números al cuadrat: ${numbersFirstExerciseSquared}`);
 const numbersToFilter = [1, 2, 3, 4];
 const onlyPairNumbers = numbersToFilter.filter((number) => number % 2 === 0);
 console.log(`Pair numbers ${onlyPairNumbers}`);
+
+const numbersToFind = [1, 10, 8, 11];
+const numbersGreaterTen = numbersToFind.find((number) => number > 10);
+
+console.log(`Primer número major que 10: ${numbersGreaterTen}`);
