@@ -107,3 +107,13 @@ const showNumber = (number) => {
 };
 const arrayNumbersElements = [1, 3, 4];
 processarElements(arrayNumbersElements, showNumber);
+
+const processarCadena = (characterString, callBackCapitalLetters) =>
+  callBackCapitalLetters(characterString);
+
+const capitalLetters = (wordToCapitalLetters) =>
+  wordToCapitalLetters.toUpperCase();
+
+const wordToChange = "hola";
+
+console.log(processarCadena(wordToChange, capitalLetters));
