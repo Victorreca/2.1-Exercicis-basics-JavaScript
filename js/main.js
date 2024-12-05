@@ -227,3 +227,11 @@ let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
 for (const key in obj) {
   console.log(`${key}: ${obj[key]}`);
 }
+
+let numeros = [1, 2, 3, 4, 5, 6];
+for (const numero of numeros) {
+  if (numero === 5) {
+    break;
+  }
+  console.log(numero);
+}
