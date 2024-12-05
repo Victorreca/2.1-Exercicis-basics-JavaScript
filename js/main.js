@@ -169,3 +169,7 @@ const numbersFirstExerciseSquared = numbersFirstExercise.map(
   (number) => number * number
 );
 console.log(`Números al cuadrat: ${numbersFirstExerciseSquared}`);
+
+const numbersToFilter = [1, 2, 3, 4];
+const onlyPairNumbers = numbersToFilter.filter((number) => number % 2 === 0);
+console.log(`Pair numbers ${onlyPairNumbers}`);
