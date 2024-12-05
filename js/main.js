@@ -196,3 +196,14 @@ const oneLineFunction = (arrayNumbers) =>
     .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 console.log("One line: " + oneLineFunction(arrayNumbersExerciseFive));
+
+const arrayNumbersEverySome = [11, 12, 13, 14];
+
+const everyNumberIsGreaterThanTen = (arrayNumbersEvery) =>
+  arrayNumbersEvery.every((number) => number > 10);
+
+const someNumberIsGreaterThanTen = (arrayNumbersSome) =>
+  arrayNumbersSome.some((number) => number > 10);
+
+console.log(everyNumberIsGreaterThanTen(arrayNumbersEverySome));
+console.log(someNumberIsGreaterThanTen(arrayNumbersEverySome));
