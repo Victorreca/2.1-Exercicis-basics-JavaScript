@@ -218,3 +218,7 @@ const namesForOf = ["Anna", "Bernat", "Clara"];
 for (const name of namesForOf) {
   console.log(name);
 }
+
+const numbersFilter = [1, 2, 3, 4, 5, 6];
+const pairsNumbers = numbersFilter.filter((number) => number % 2 === 0);
+console.log(pairsNumbers);
