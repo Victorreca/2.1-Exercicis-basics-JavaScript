@@ -69,3 +69,51 @@ const parOImpar = (arrayNumbers) => {
 };
 const arrayNumberParOImpar = [2, 3, 4, 10, 5];
 parOImpar(arrayNumberParOImpar);
+
+const processar = (numberFunction, functionCallback) => {
+  return functionCallback(numberFunction);
+};
+
+const sumTwo = (num) => num + 2;
+
+console.log(processar(8, sumTwo));
+
+const calculadora = (firstNumber, secondNumber, calculateFunction) =>
+  calculateFunction(firstNumber, secondNumber);
+
+const addNumbers = (firstAddNumber, secondAddNumber) =>
+  firstAddNumber + secondAddNumber;
+
+console.log(calculadora(3, 4, addNumbers));
+
+const esperarISaludar = (name, functionWaiting) =>
+  setTimeout(() => {
+    functionWaiting(name);
+  }, 2000);
+
+const sayHi = (userName) => {
+  console.log(`Hi ${userName}`);
+};
+esperarISaludar("Jose", sayHi);
+
+const processarElements = (arrayProcessarElements, functionElement) => {
+  arrayProcessarElements.forEach((elementArray) => {
+    functionElement(elementArray);
+  });
+};
+
+const showNumber = (number) => {
+  console.log(number);
+};
+const arrayNumbersElements = [1, 3, 4];
+processarElements(arrayNumbersElements, showNumber);
+
+const processarCadena = (characterString, callBackCapitalLetters) =>
+  callBackCapitalLetters(characterString);
+
+const capitalLetters = (wordToCapitalLetters) =>
+  wordToCapitalLetters.toUpperCase();
+
+const wordToChange = "hola";
+
+console.log(processarCadena(wordToChange, capitalLetters));
