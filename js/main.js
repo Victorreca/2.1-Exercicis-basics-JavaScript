@@ -132,3 +132,11 @@ const suma = (...numbers) => {
 };
 
 console.log(suma(3, 4, 2));
+
+const objecte1 = { name: "Paco", age: 45 };
+const objecte2 = { ...objecte1 };
+
+objecte2.name = "Juan";
+
+console.log(objecte1);
+console.log(objecte2);
