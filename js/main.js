@@ -222,3 +222,8 @@ for (const name of namesForOf) {
 const numbersFilter = [1, 2, 3, 4, 5, 6];
 const pairsNumbers = numbersFilter.filter((number) => number % 2 === 0);
 console.log(pairsNumbers);
+
+let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
+for (const key in obj) {
+  console.log(`${key}: ${obj[key]}`);
+}
