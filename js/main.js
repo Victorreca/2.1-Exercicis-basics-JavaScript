@@ -207,3 +207,9 @@ const someNumberIsGreaterThanTen = (arrayNumbersSome) =>
 
 console.log(everyNumberIsGreaterThanTen(arrayNumbersEverySome));
 console.log(someNumberIsGreaterThanTen(arrayNumbersEverySome));
+
+const names = ["Anna", "Bernat", "Clara"];
+
+names.forEach((name) => {
+  console.log(name);
+});
