@@ -157,3 +157,9 @@ const spreadInFunctions = (firstArgument, secondArgument, thirdArgument) => {
 const arrayThreeElements = [6, 9, 3];
 
 spreadInFunctions(...arrayThreeElements);
+
+const firstObject = { name: "Pepe", age: 33 };
+const secondObject = { city: "Barcelona", job: "plumber" };
+
+const bothObject = { ...firstObject, ...secondObject };
+console.log(bothObject);
