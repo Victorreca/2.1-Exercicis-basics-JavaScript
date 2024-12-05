@@ -163,3 +163,9 @@ const secondObject = { city: "Barcelona", job: "plumber" };
 
 const bothObject = { ...firstObject, ...secondObject };
 console.log(bothObject);
+
+const numbersFirstExercise = [1, 2, 3, 4];
+const numbersFirstExerciseSquared = numbersFirstExercise.map(
+  (number) => number * number
+);
+console.log(`Números al cuadrat: ${numbersFirstExerciseSquared}`);
