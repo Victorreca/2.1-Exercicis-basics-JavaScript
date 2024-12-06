@@ -256,3 +256,30 @@ const promiseHelloWorld = new Promise((resolve) => {
 promiseHelloWorld.then((message) => {
   console.log(message);
 });
+
+const promiseResolveReject = (input) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (input === "Hola") {
+        resolve("Promesa resolta");
+      } else {
+        reject("Promesa rebutjada");
+      }
+    }, 2000);
+  });
+
+promiseResolveReject("Hola")
+  .then((exit) => {
+    console.log(exit);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+promiseResolveReject("Adéu")
+  .then((exit) => {
+    console.log(exit);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
