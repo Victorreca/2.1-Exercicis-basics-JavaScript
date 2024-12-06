@@ -246,3 +246,9 @@ for (const nom of noms) {
 for (const [index, nom] of noms.entries()) {
   console.log(`${nom}, posició: ${index}`);
 }
+
+const promiseHelloWorld = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Hola, món");
+  }, 2000);
+});
