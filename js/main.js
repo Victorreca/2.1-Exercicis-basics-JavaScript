@@ -235,3 +235,14 @@ for (const numero of numeros) {
   }
   console.log(numero);
 }
+
+let noms = ["Anna", "Bernat", "Clara"];
+let indexNom = 0;
+for (const nom of noms) {
+  console.log(`${nom}, posició: ${indexNom}`);
+  indexNom++;
+}
+
+for (const [index, nom] of noms.entries()) {
+  console.log(`${nom}, posició: ${index}`);
+}
