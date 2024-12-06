@@ -252,3 +252,7 @@ const promiseHelloWorld = new Promise((resolve) => {
     resolve("Hola, món");
   }, 2000);
 });
+
+promiseHelloWorld.then((message) => {
+  console.log(message);
+});
