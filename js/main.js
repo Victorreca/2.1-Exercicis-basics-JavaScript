@@ -285,7 +285,30 @@ const printHelloWorld = async () => {
     const result = await promiseHelloWorldAsync;
     console.log(result);
   } catch (error) {
-    console.log("Error");
+    console.log("Error:", error);
   }
 };
 printHelloWorld();
+
+const firstPromise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Primera promesa");
+  }, 2000);
+});
+
+const secondPromise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Segona promesa");
+  }, 3000);
+});
+
+const printAllPromises = async () => {
+  try {
+    const results = await Promise.all([firstPromise, secondPromise]);
+    console.log(results);
+  } catch (error) {
+    console.log("Error:", error);
+  }
+};
+
+printAllPromises();
