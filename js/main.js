@@ -273,3 +273,19 @@ promiseResolveReject("Hola")
 promiseResolveReject("Adéu")
   .then((exit) => console.log(exit))
   .catch((error) => console.log(error));
+
+const promiseHelloWorldAsync = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Hola, món2");
+  }, 2000);
+});
+
+const printHelloWorld = async () => {
+  try {
+    const result = await promiseHelloWorldAsync;
+    console.log(result);
+  } catch (error) {
+    console.log("Error");
+  }
+};
+printHelloWorld();
