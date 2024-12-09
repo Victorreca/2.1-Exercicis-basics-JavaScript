@@ -26,15 +26,15 @@ const numbersTotalAdd = numbersToReduce.reduce(
 console.log(`Suma total ${numbersTotalAdd}`);
 
 // Exercici 5
-const arrayNumbersExerciseFive = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+const numbers = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
 
-const oneLineFunction = (arrayNumbers) =>
-  arrayNumbers
+const oneLineFunction = (numbers) =>
+  numbers
     .filter((number) => number >= 10)
     .map((number) => number * 2)
     .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-console.log("One line: " + oneLineFunction(arrayNumbersExerciseFive));
+console.log("One line: " + oneLineFunction(numbers));
 
 // Exercici 6
 const arrayNumbersEverySome = [11, 12, 13, 14];

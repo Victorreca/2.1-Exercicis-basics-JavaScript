@@ -1,13 +1,16 @@
+// Exercici 1
 const promiseHelloWorld = new Promise((resolve) => {
   setTimeout(() => {
     resolve("Hola, món");
   }, 2000);
 });
 
+// Exercici 2
 promiseHelloWorld.then((message) => {
   console.log(message);
 });
 
+// Exercici 3
 const promiseResolveReject = (input) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -25,6 +28,7 @@ promiseResolveReject("Adéu")
   .then((exit) => console.log(exit))
   .catch((error) => console.log(error));
 
+// Exercici 4 y 5
 const promiseHelloWorldAsync = new Promise((resolve) => {
   setTimeout(() => {
     resolve("Hola, món2");
@@ -41,6 +45,7 @@ const printHelloWorld = async () => {
 };
 printHelloWorld();
 
+// Exercici 6
 const firstPromise = new Promise((resolve) => {
   setTimeout(() => {
     resolve("Primera promesa");

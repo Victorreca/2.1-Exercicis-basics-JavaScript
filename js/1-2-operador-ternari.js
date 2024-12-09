@@ -38,11 +38,9 @@ console.log(trobarMaxim(5, 6, 7));
 const parOImpar = (arrayNumbers) => {
   let result = "";
 
-  arrayNumbers.forEach((numberParOImpar) => {
+  arrayNumbers.forEach((number) => {
     result =
-      numberParOImpar % 2 === 0
-        ? `${numberParOImpar} és parell.`
-        : `${numberParOImpar} és imparell.`;
+      number % 2 === 0 ? `${number} és parell.` : `${number} és imparell.`;
 
     console.log(result);
   });

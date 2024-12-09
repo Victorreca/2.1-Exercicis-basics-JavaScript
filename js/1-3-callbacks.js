@@ -43,8 +43,7 @@ processarElements(arrayNumbersElements, showNumber);
 const processarCadena = (characterString, callBackCapitalLetters) =>
   callBackCapitalLetters(characterString);
 
-const capitalLetters = (wordToCapitalLetters) =>
-  wordToCapitalLetters.toUpperCase();
+const capitalLetters = (word) => word.toUpperCase();
 
 const wordToChange = "hola";
 

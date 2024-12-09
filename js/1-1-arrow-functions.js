@@ -15,7 +15,7 @@ const arrayNumbers = [0, 2, 5];
 
 const printNumbers = (arrayNumbersValue) => {
   for (let i = 0; i < arrayNumbersValue.length; i++) {
-    (() => console.log(arrayNumbers[i]))();
+    console.log(arrayNumbersValue[i]);
   }
 };
 printNumbers(arrayNumbers);
