@@ -1,19 +1,3 @@
-const arrayNumbers = [0, 2, 5];
-
-const printNumbers = (arrayNumbersValue) => {
-  for (let i = 0; i < arrayNumbersValue.length; i++) {
-    (() => console.log(arrayNumbers[i]))();
-  }
-};
-printNumbers(arrayNumbers);
-
-const setTimeOutFunction = () => {
-  setTimeout(() => {
-    console.log(`Has esperat 3 segons`);
-  }, 3000);
-};
-setTimeOutFunction();
-
 const potConduir = (age) => {
   return age >= 18 ? "Pots conduir" : "No pots conduir";
 };
